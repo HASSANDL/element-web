@@ -25,7 +25,6 @@ import { ResetIdentityDialog } from "../../views/dialogs/ResetIdentityDialog";
 import { EncryptionCard } from "../../views/settings/encryption/EncryptionCard";
 import { EncryptionCardButtons } from "../../views/settings/encryption/EncryptionCardButtons";
 import { EncryptionCardEmphasisedContent } from "../../views/settings/encryption/EncryptionCardEmphasisedContent";
-import ExternalLink from "../../views/elements/ExternalLink";
 import dispatcher from "../../../dispatcher/dispatcher";
 
 interface IProps {
@@ -203,11 +202,6 @@ export default class SetupEncryptionBody extends React.Component<IProps, IState>
                 >
                     <EncryptionCardEmphasisedContent>
                         <span>{_t("encryption|verification|confirm_identity_description")}</span>
-                        <span>
-                            <ExternalLink href="https://element.io/help#encryption-device-verification">
-                                {_t("action|learn_more")}
-                            </ExternalLink>
-                        </span>
                     </EncryptionCardEmphasisedContent>
                     <EncryptionCardButtons>
                         {verifyButton}

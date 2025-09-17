@@ -27,6 +27,7 @@ export const enum UIFeature {
     BulkUnverifiedSessionsReminder = "UIFeature.BulkUnverifiedSessionsReminder",
     AllowCreatingPublicRooms = "UIFeature.allowCreatingPublicRooms",
     AllowCreatingPublicSpaces = "UIFeature.allowCreatingPublicSpaces",
+    ServerPicker = "UIFeature.serverPicker",
 }
 
 export enum UIComponent {

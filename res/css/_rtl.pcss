@@ -1,0 +1,365 @@
+@font-face {
+    font-family: IRANYekan;
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("$(res)/fonts/Yekan/IRANYekan.woff") format("woff"),
+        url("$(res)/fonts/Yekan/IRANYekan.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANYekanEN;
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("$(res)/fonts/Yekan/IRANYekanEN.woff") format("woff"),
+        url("$(res)/fonts/Yekan/IRANYekanEN.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANYekanBold;
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("$(res)/fonts/Yekan/IRANYekanBold.woff") format("woff"),
+        url("$(res)/fonts/Yekan/IRANYekanBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANYekanBoldEN;
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("$(res)/fonts/Yekan/IRANYekanBoldEN.woff") format("woff"),
+        url("$(res)/fonts/Yekan/IRANYekanBoldEN.woff2") format("woff2");
+}
+
+html[lang="fa"],
+html[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+
+    * {
+        font-family: "IRANYekan" !important;
+    }
+
+    .mx_SpacePanel .mx_SpacePanel_toggleCollapse {
+        rotate: 180deg;
+        left: 8px;
+        right: unset;
+    }
+
+    .mx_SpacePanel .mx_SpaceItem:not(.hasSubSpaces) > .mx_SpaceButton {
+        margin-left: 0px;
+    }
+
+    .mx_SpacePanel .mx_SpaceTreeLevel {
+        align-items: stretch;
+    }
+
+    .mx_Dialog_cancelButton {
+        left: var(--cpd-space-4x);
+        right: unset;
+    }
+
+    .mx_SpotlightDialog .mx_SpotlightDialog_searchBox > input {
+        padding-right: 8px;
+    }
+
+    .mx_SpotlightDialog .mx_SpotlightDialog_searchBox > .mx_SpotlightDialog_filter .mx_SpotlightDialog_filter--close {
+        margin-right: 8px;
+        margin-left: unset;
+    }
+
+    .mx_TabbedView_tabsOnLeft .mx_TabbedView_tabPanel {
+        margin-right: 280px;
+        margin-left: unset;
+    }
+
+    .mx_TabbedView_tabLabel svg {
+        margin-left: var(--cpd-space-3x);
+        margin-right: unset;
+    }
+
+    .mx_TabbedView {
+        padding: 0 var(--cpd-space-8x) 0 var(--cpd-space-8x);
+    }
+
+    .mx_SettingsSubsection {
+        margin-bottom: 16px;
+    }
+
+    .mx_AccessibleButton.mx_AccessibleButton_kind_danger,
+    .mx_AccessibleButton.mx_AccessibleButton_kind_danger.mx_AccessibleButton_disabled {
+        color: var(--cpd-color-text-primary);
+    }
+
+    .mx_ToggleSwitch.mx_ToggleSwitch_on > .mx_ToggleSwitch_ball {
+        right: calc(100% - 1.25rem);
+        left: unset;
+    }
+    ._ui_19o42_34:after {
+        transform: translateX(-90%);
+    }
+
+    :checked + ._ui_19o42_34:after {
+        transform: translateX(0%);
+    }
+
+    .mx_ContextualMenu_wrapper {
+        right: 72px;
+        left: unset;
+    }
+
+    .mx_Field label {
+        left: unset;
+        right: 0;
+    }
+
+    .mx_ContextualMenu_wrapper {
+        right: unset;
+        left: 139px;
+    }
+
+    .mx_ContextualMenu_wrapper .mx_ContextualMenu.mx_ContextualMenu_bottom {
+        right: -50px;
+        bottom: 8px;
+    }
+
+    .mx_IconizedContextMenu
+        .mx_IconizedContextMenu_optionList
+        .mx_IconizedContextMenu_item
+        .mx_IconizedContextMenu_icon
+        + .mx_IconizedContextMenu_label {
+        padding-left: unset;
+        padding-right: 14px;
+    }
+
+    .mx_ContextualMenu.mx_ContextualMenu_left.mx_ContextualMenu_top.mx_ContextualMenu_rightAligned {
+        transform: translateX(-20%);
+    }
+
+    .mx_TabbedView_tabsOnLeft .mx_TabbedView_maskedIcon {
+        margin-left: var(--cpd-space-3x);
+        margin-right: unset;
+    }
+
+    .mx_AccessibleButton.mx_NotificationSound_browse {
+        margin-left: 10px;
+        margin-right: unset;
+    }
+
+    .mx_NotificationSettingsTab_notificationsSection .mx_StyledRadioButton:before {
+        left: unset;
+        right: -8px;
+        top: -4px;
+    }
+
+    .mx_CopyableText.mx_CopyableText_border {
+        padding: 10px;
+    }
+
+    .mx_SpaceRoomView_landing
+        .mx_SpaceHierarchy_list
+        li.mx_SpaceHierarchy_roomTileWrapper
+        .mx_SpaceHierarchy_roomTile
+        .mx_SpaceHierarchy_roomTile_item
+        .mx_SpaceHierarchy_roomTile_name
+        .mx_InfoTooltip,
+    .mx_SpaceRoomView_landing
+        .mx_SpaceHierarchy_list
+        li.mx_SpaceHierarchy_roomTileWrapper
+        .mx_SpaceHierarchy_roomTile
+        .mx_SpaceHierarchy_roomTile_item
+        .mx_SpaceHierarchy_roomTile_name
+        .mx_SpaceHierarchy_roomTile_joined {
+        margin-left: unset;
+        margin-right: 12px;
+    }
+
+    .mx_SpaceRoomView_landing
+        .mx_SpaceHierarchy_list
+        li.mx_SpaceHierarchy_roomTileWrapper
+        .mx_SpaceHierarchy_roomTile
+        .mx_SpaceHierarchy_roomTile_item
+        .mx_SpaceHierarchy_roomTile_name
+        .mx_InfoTooltip
+        .mx_InfoTooltip_icon,
+    .mx_SpaceRoomView_landing
+        .mx_SpaceHierarchy_list
+        li.mx_SpaceHierarchy_roomTileWrapper
+        .mx_SpaceHierarchy_roomTile
+        .mx_SpaceHierarchy_roomTile_item
+        .mx_SpaceHierarchy_roomTile_name
+        .mx_SpaceHierarchy_roomTile_joined
+        .mx_InfoTooltip_icon {
+        margin-right: unset;
+        margin-left: 4px;
+    }
+
+    input[type="search"].mx_textinput_icon,
+    input[type="text"].mx_textinput_icon {
+        padding: 8px;
+    }
+
+    .mx_ThreadsActivityCentreButton.expanded {
+        margin-left: unset;
+        margin-right: 20px;
+    }
+
+    .mx_ThreadsActivityCentreButton.expanded .mx_ThreadsActivityCentreButton_Icon {
+        margin-right: unset;
+        margin-left: 16px;
+    }
+
+    .mx_SpacePanel .mx_SpaceTreeLevel {
+        align-items: stretch;
+    }
+
+    .mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_menuButton {
+        left: 4px;
+        right: unset;
+    }
+
+    .mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_name {
+        margin-right: 8px;
+        margin-left: unset;
+    }
+
+    .mx_Dropdown_arrow {
+        margin-left: 4px;
+        margin-right: unset;
+    }
+
+    .mx_RoomSublist
+        .mx_RoomSublist_headerContainer
+        .mx_RoomSublist_headerText
+        .mx_RoomSublist_collapseBtn.mx_RoomSublist_collapseBtn_collapsed:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .mx_RoomSublist .mx_RoomSublist_headerContainer .mx_RoomSublist_headerText .mx_RoomSublist_collapseBtn {
+        margin-left: 6px;
+        margin-right: unset;
+    }
+
+    .mx_RoomSublist.mx_RoomSublist_minimized.mx_RoomSublist_hasMenuOpen .mx_RoomSublist_menuButton,
+    .mx_RoomSublist.mx_RoomSublist_minimized > .mx_RoomSublist_headerContainer:hover .mx_RoomSublist_menuButton {
+        right: unset;
+        left: 0;
+        bottom: 52px;
+        border-radius: 6px;
+    }
+
+    .mx_RoomSublist.mx_RoomSublist_hasMenuOpen .mx_RoomSublist_menuButton,
+    .mx_RoomSublist:not(.mx_RoomSublist_minimized)
+        > .mx_RoomSublist_headerContainer:focus-within
+        .mx_RoomSublist_menuButton,
+    .mx_RoomSublist:not(.mx_RoomSublist_minimized) > .mx_RoomSublist_headerContainer:hover .mx_RoomSublist_menuButton {
+        margin-right: 8px;
+        margin-left: unset;
+    }
+
+    #mx_RoomSublist_label_im\.vector\.fake\.recent,
+    #mx_RoomSublist_label_im\.vector\.fake\.direct {
+        display: none;
+    }
+
+    .mx_QuickSettingsButton_icon {
+        margin-right: unset;
+        margin-left: var(--cpd-space-1x);
+    }
+
+    .mx_QuickThemeSwitcher {
+        gap: 8px;
+    }
+
+    .mx_QuickThemeSwitcher .mx_Dropdown {
+        flex: 1;
+    }
+
+    .mx_RoomSettingsDialog .mx_SettingsDialog_tabLabelsAlert:after,
+    .mx_SpacePreferencesDialog .mx_SettingsDialog_tabLabelsAlert:after,
+    .mx_SpaceSettingsDialog .mx_SettingsDialog_tabLabelsAlert:after,
+    .mx_UserSettingsDialog .mx_SettingsDialog_tabLabelsAlert:after {
+        right: unset;
+        left: var(--cpd-space-4x);
+    }
+
+    .mx_RoomHeader_info {
+        padding-right: unset;
+        padding-left: var(--cpd-space-13x);
+    }
+
+    .mx_GenericEventListSummary .mx_GenericEventListSummary_avatars {
+        margin-left: 8px;
+        margin-right: unset;
+    }
+
+    .mx_DevTools_content .mx_Field_input:first-of-type {
+        margin-left: 42px;
+        margin-right: unset;
+    }
+
+    .mx_Dialog
+        button:not(
+            .mx_EncryptionUserSettingsTab button,
+            .mx_EncryptionCard button,
+            .mx_UserProfileSettings button,
+            .mx_ShareDialog button,
+            .mx_UnpinAllDialog button,
+            .mx_ThemeChoicePanel_CustomTheme button,
+            .mx_Dialog_nonDialogButton,
+            .mx_AccessibleButton,
+            .mx_IdentityServerPicker button,
+            .mx_AccessSecretStorageDialog button,
+            [class|="maplibregl"]
+        ),
+    .mx_Dialog input[type="submit"],
+    .mx_Dialog_buttons button:not(.mx_Dialog_nonDialogButton, .mx_AccessibleButton),
+    .mx_Dialog_buttons input[type="submit"] {
+        margin-left: var(--buttons-dialog-gap-column);
+        margin-right: unset;
+    }
+
+    .mx_QuickSettingsButton.expanded {
+        margin-left: unset;
+        margin-right: 20px;
+        padding-left: 8px;
+        padding-right: 44px;
+    }
+
+    .mx_QuickSettingsButton:before {
+        right: 0;
+    }
+
+    .mx_Field_select:before {
+        left: 4px;
+        right: unset;
+    }
+
+    .mx_MessageComposer_row {
+        flex-direction: row-reverse;
+    }
+
+    .mx_NewRoomIntro
+        .mx_NewRoomIntro_buttons
+        .mx_AccessibleButton:not(.mx_AccessibleButton_kind_primary_outline):before {
+        margin-left: 5px;
+        margin-right: unset;
+    }
+
+    .mx_QuickSettingsButton_ContextMenuWrapper .mx_ContextualMenu .mx_QuickSettingsButton_moreOptionsButton {
+        display: flex;
+    }
+
+    .mx_SidebarUserSettingsTab_icon {
+        margin-left: var(--cpd-space-2x);
+        margin-right: unset;
+    }
+    .mx_UserMenu_name {
+        margin-left: unset;
+        margin-right: 10px;
+    }
+}

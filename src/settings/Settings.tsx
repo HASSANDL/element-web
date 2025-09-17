@@ -126,10 +126,10 @@ export interface IBaseSetting<T extends SettingValueType = SettingValueType> {
     // Display names are strongly recommended for clarity.
     // Display name can also be an object for different levels.
     displayName?:
-        | TranslationKey
-        | Partial<{
-              [level in SettingLevel]: TranslationKey;
-          }>;
+    | TranslationKey
+    | Partial<{
+        [level in SettingLevel]: TranslationKey;
+    }>;
 
     // Optional description which will be shown as microCopy under SettingsFlags
     description?: TranslationKey | (() => ReactNode);
@@ -304,11 +304,11 @@ export interface Settings {
     "deviceNotificationsEnabled": IBaseSetting<boolean>;
     "notificationSound": IBaseSetting<
         | {
-              name: string;
-              type: string;
-              size: number;
-              url: string;
-          }
+            name: string;
+            type: string;
+            size: number;
+            url: string;
+        }
         | false
     >;
     "notificationBodyEnabled": IBaseSetting<boolean>;
@@ -1388,6 +1388,10 @@ export const SETTINGS: Settings = {
         default: true,
     },
     [UIFeature.PasswordReset]: {
+        supportedLevels: LEVELS_UI_FEATURE,
+        default: true,
+    },
+    [UIFeature.ServerPicker]: {
         supportedLevels: LEVELS_UI_FEATURE,
         default: true,
     },
